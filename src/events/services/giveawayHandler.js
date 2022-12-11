@@ -1,6 +1,6 @@
 const client = require(`../../index`);
 const {ActionRowBuilder, ButtonBuilder, ButtonStyle} = require('discord.js');
-const gawModel = require(`../../Models/giveawaySchema`);
+const gawModel = require(`../../database/models/giveawaySchema`);
 const config = require(`../../config/giveaway.json`);
 
 module.exports = {

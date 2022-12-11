@@ -1,7 +1,7 @@
 const {Client, ChatInputCommandInteraction, EmbedBuilder, PermissionsBitField, ApplicationCommandOptionType, ActionRowBuilder, ButtonBuilder, ButtonStyle} = require('discord.js');
 const ms = require('ms');
 const emoji = require(`../../config/emoji.json`);
-const gawModel = require('../../Models/giveawaySchema');
+const gawModel = require('../../database/models/giveawaySchema');
 const config = require(`../../config/giveaway.json`);
 
 module.exports = {

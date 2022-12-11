@@ -1,4 +1,4 @@
-const gawModel = require(`../../Models/giveawaySchema`);
+const gawModel = require(`../../database/models/giveawaySchema`);
 const {EmbedBuilder} = require('discord.js')
 const emoji = require(`../../config/emoji.json`);
 const config = require('../../config/giveaway.json');
