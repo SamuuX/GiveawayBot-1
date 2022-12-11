@@ -1,7 +1,7 @@
 
 # Giveaway Bot
 
-An Advanced Giveaway Bot to match most of your requirements. This bot consist insane features like multiplies, requirements, custom options and many more. Giveaway system is also compatible to survive Bot crash/restart.
+An Advanced Giveaway Bot to match most of your requirements. This bot contains insane features like multiplies, requirements, custom options and many more. Giveaway system is also compatible to survive Bot crash/restart.
 
 
 
