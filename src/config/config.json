@@ -1,9 +1,9 @@
 {
-    "TOKEN": "TOKEN",
-    "MONGODB": "MongoURL",
-    "CLIENTID": "ApplicationID",
-    "PREFIX": ".",
+    "TOKEN": "TOKEN_HERE",
+    "MONGODB": "MONGO_URL_HERE",
+    "CLIENTID": "CLIENT_ID_HERE",
+    "PREFIX": "PREFIX_HERE",
     "OWNER": [
-        "767383867031945236"
+        "OWNER_ID_HERE"
     ]
 }
