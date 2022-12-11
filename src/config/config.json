@@ -1,6 +1,6 @@
 {
     "TOKEN": "TOKEN",
-    "DbURL": "MongoURL",
+    "MONGODB": "MongoURL",
     "CLIENTID": "ApplicationID",
     "PREFIX": ".",
     "OWNER": [
