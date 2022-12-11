@@ -2,7 +2,6 @@ require('./console/watermark')
 const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
 const config = require('./config/config.json');
-const mongoose = require('mongoose');
 
 const client = new Client({
     intents: [
@@ -28,23 +27,12 @@ if(!config.DbURL) {
     return process.exit();
 }
 
-mongoose.set('strictQuery', true);
-try {
-    mongoose.connect(config.DbURL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
-} catch (error) {
-    console.log("[CRUSH] Something went wrong while connecting to your MongoDB Database" + "\n");
-    console.log("[CRUSH] Error from MongoDB :" + error);
-    process.exit();
-}
-mongoose.connection.once("open", () => {})
-
 if (!config.TOKEN) {
     console.log("[WARN] Token for discord bot is required! put your token in config file".yellow.bold + "\n")
     return process.exit();
 };
+
+require("./database/connect")();
 
 client.commands = new Collection()
 client.events = new Collection()
