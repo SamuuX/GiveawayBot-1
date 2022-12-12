@@ -22,7 +22,7 @@ const client = new Client({
     ]
 });
 
-if(!config.DbURL) {
+if(!config.MONGODB) {
     console.log("[WARN] MongoDB URL is required! put your MongoDB URI in config file".yellow.bold + "\n")
     return process.exit();
 }
