@@ -51,6 +51,7 @@ Head to MongoDB Atlas site and create a free cluster. Complete the setup precedu
 
 Join our Support Server
 
+[<img src="https://discordapp.com/api/guilds/890225986375929866/widget.png?style=banner2" alt="Discord Banner 1"/>](https://raidenbot.xyz/support)
+
 [<img src="https://discordapp.com/api/guilds/789443193989103648/widget.png?style=banner2" alt="Discord Banner 1"/>](https://discord.gg/TvjrWtEuyP)
 
-[<img src="https://discordapp.com/api/guilds/890225986375929866/widget.png?style=banner2" alt="Discord Banner 1"/>](https://raidenbot.xyz/support)
