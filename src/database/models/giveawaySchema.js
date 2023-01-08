@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const gawSchema = new Schema({
     msgid: {type: String, required: true, unique: true},
-    serverID: {type: String},
+    serverID: {type: String, default: null},
     status: {type: Boolean, default: true},
-    chId: {type: String},
+    chId: {type: String, default: null},
     host: {type: String, default: null},
     prize: {type: String, default: null},
     winCount: {type: Number, default: 1},
