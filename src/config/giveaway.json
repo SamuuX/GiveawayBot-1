@@ -1,12 +1,19 @@
 {
     "managerroles": [
-        "1050795603417903115"
+        "MANAGERROLEID-1",
+        "MANAGERROLEID-2"
     ],
     "emote": "🎉",
     "color": "#ff4c0a",
-    "winrole": [],
+    "winrole": [
+        "WINNERROLEID-1",
+        "WINNERROLEID-2"
+    ],
     "pingrole": null,
     "gawmsg": null,
-    "blacklist": [],
+    "blacklist": [
+        "BLACKLISTROLEID-1",
+        "BLACKLISTROLEID-2"
+    ],
     "banner": null
 }
