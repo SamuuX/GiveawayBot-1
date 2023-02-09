@@ -25,6 +25,8 @@ async function gaw(client){
             if(!id) return;
 
             if(!i.status) return;
+            
+            if(!guild.channels.cache.get(i.chId)) return;
 
             await guild.channels.cache.get(i.chId).messages.fetch(i.msgid).catch(e => null);
 
@@ -128,6 +130,8 @@ ${desc2.length == 0?``:`${emoji.point} **Requirements**\n`.concat(desc2)}
                 if(!id) return;
     
                 if(!i.status) return;
+                
+                if(!guild.channels.cache.get(i.chId)) return;
     
                 await guild.channels.cache.get(i.chId).messages.fetch(i.msgid).catch(e => null);
     
