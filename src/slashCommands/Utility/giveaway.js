@@ -1152,13 +1152,13 @@ ${desc2.length == 0?``:`${emoji.point} **Requirements**\n`.concat(desc2)}
                 if(role1){
                     entry.winners.forEach(async i => {
                         await interaction.guild.members.fetch(i).catch(e => null);
-                        await interaction.guild.members.cache.get(i).roles.remove(role, 'Giveaway Re rolled').catch(e => null);
+                        await interaction.guild.members.cache.get(i).roles.remove(role1, 'Giveaway Re rolled').catch(e => null);
                     });
                 }
             }
 
             // Drawing winner(s)
-            let list = entry.entries;
+            let list = entry.entries.filter(nik => !entry.winners.includes(nik));
             var winnerId = ``;
             let winners = [];
             let no = Number(entry.winCount) || 1;
