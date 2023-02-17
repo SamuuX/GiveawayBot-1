@@ -16,5 +16,14 @@
   "keywords": [],
   "author": "FlameFace#0570",
   "license": "ISC",
-  "description": ""
+  "description": "An Advanced Giveaway Bot to match most of your requirements. This bot contains insane features like multiplies, requirements, custom options and many more. Giveaway system is also compatible to survive Bot crash/restart.",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elitex07/GiveawayBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elitex07/GiveawayBot/issues"
+  },
+  "homepage": "https://github.com/Elitex07/GiveawayBot#readme"
 }
