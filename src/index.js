@@ -2,6 +2,7 @@ require('./console/watermark')
 const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
 const config = require('./config/config.json');
+require('dotenv').config()
 
 const client = new Client({
     intents: [
@@ -22,12 +23,12 @@ const client = new Client({
     ]
 });
 
-if(!config.MONGODB) {
+if(!process.env.MONGODB) {
     console.log("[WARN] MongoDB URL is required! put your MongoDB URI in config file".yellow.bold + "\n")
     return process.exit();
 }
 
-if (!config.TOKEN) {
+if (!process.env.TOKEN) {
     console.log("[WARN] Token for discord bot is required! put your token in config file".yellow.bold + "\n")
     return process.exit();
 };
@@ -46,7 +47,7 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login(config.TOKEN)
+client.login(process.env.TOKEN)
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);

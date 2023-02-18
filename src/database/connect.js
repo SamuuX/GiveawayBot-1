@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const config = require('../config/config.json')
 const colors = require('colors')
-
+require('dotenv').config()
 async function connect() {
     mongoose.set('strictQuery', false)
 
-    mongoose.connect(config.MONGODB, {
+    mongoose.connect(process.env.MONGODB, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });
