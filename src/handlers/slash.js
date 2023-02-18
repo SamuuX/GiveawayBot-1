@@ -31,7 +31,7 @@ module.exports = async () => {
         return process.exit()
     };
 
-    const rest = new REST({ version: '10' }).setToken(config.TOKEN);
+    const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
     await rest.put(
         Routes.applicationCommands(config.CLIENTID),
