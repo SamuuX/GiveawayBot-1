@@ -91,7 +91,7 @@ client.on('interactionCreate', async interaction => {
 
         if(req.has('age')){
             let val = req.get('age');
-            if(Date.now() - interaction.member.joinedTimestamp <= val) reqfulfill = false;
+            if(Date.now() - interaction.user.createdTimestamp <= val) reqfulfill = false;
         }
         if(!reqfulfill) {
             await interaction.editReply('You are not enough old to take part in the Giveaway');
